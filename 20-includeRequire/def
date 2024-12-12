@@ -44,3 +44,4 @@ Ejercicio:
 - Crea un archivo que contenga un menú lateral (sidebar) y otro que contenga el contenido principal de una página web.
 - Incluye ambos archivos en un archivo principal y verifica que se muestren correctamente.
 - Prueba qué sucede si cambias include por require o include_once por require_once.
+
