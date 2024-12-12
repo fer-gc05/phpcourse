@@ -90,6 +90,15 @@ echo '<br><br>';
 echo saludar('Juan'); # Salida: Hola, Juan!
 echo '<br><br>';
 
-# Ejercicio
+/*
+Ejercicio:
+Crea una función llamada calcularDescuento que reciba dos parámetros: el total de la compra y el porcentaje de descuento a aplicar.
+La función debe devolver el total a pagar después de aplicar el descuento.
+Llama a la función calcularDescuento con los siguientes valores: total de la compra = 1000 y porcentaje de descuento = 10.
+Luego calcula con estos valores total a pagar: 5000 y porcentaje de descuento = 20.
+Imprime el resultado.
+*/
+
+
 
 
