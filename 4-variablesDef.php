@@ -1,6 +1,6 @@
 <?php
 #Carga los posibles errores de php
-ini_set('display_errors', 1);
+ini_set('display_errors', 1); # Activa los errores para que se muestren en pantalla
 
 /*
 Una variable es un espacio en memoria que se utiliza para almacenar un valor.
