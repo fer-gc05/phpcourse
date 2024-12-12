@@ -1,0 +1,46 @@
+Definición de include, require y sus variantes en PHP
+
+1. include:
+   - Incluir y evaluar un archivo externo en tiempo de ejecución.
+   - Si el archivo no se encuentra, PHP genera un warning pero continúa la ejecución.
+   - Uso típico: Para archivos opcionales.
+   - Ejemplo:
+     include 'archivo.php';
+
+2. require:
+   - Similar a include, pero si el archivo no se encuentra, genera un fatal error y detiene la ejecución del script.
+   - Uso típico: Para archivos esenciales.
+   - Ejemplo:
+     require 'archivo.php';
+
+3. include_once:
+   - Funciona como include, pero asegura que el archivo sea incluido solo una vez.
+   - Evita errores por múltiples inclusiones.
+   - Uso típico: Cuando un archivo puede ser llamado varias veces en un script.
+   - Ejemplo:
+     include_once 'archivo.php';
+
+4. require_once:
+   - Funciona como require, pero asegura que el archivo sea incluido solo una vez.
+   - Uso típico: Para configuraciones o archivos fundamentales que no deben duplicarse.
+   - Ejemplo:
+     require_once 'archivo.php';
+
+Explicación del ejemplo:
+
+1. En el header:
+   - El archivo inc/nav.php es incluido usando include:
+     include "inc/nav.php";
+   - Este archivo contiene el menú de navegación. Si no existe, PHP muestra una advertencia, pero el resto del script continúa ejecutándose.
+
+2. En el main:
+   - El archivo inc/table.php es incluido usando require_once:
+     require_once "inc/table.php";
+   - Este archivo contiene la tabla principal. Si no se encuentra, PHP detendrá la ejecución del script.
+   - Al usar require_once, se garantiza que el archivo no se incluya más de una vez, evitando conflictos o errores.
+
+Ejercicio:
+
+- Crea un archivo que contenga un menú lateral (sidebar) y otro que contenga el contenido principal de una página web.
+- Incluye ambos archivos en un archivo principal y verifica que se muestren correctamente.
+- Prueba qué sucede si cambias include por require o include_once por require_once.
